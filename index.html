@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app="giphyThing">
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <title>Angular Day 1</title>
+</head>
+<body ng-controller="mainCtrl">
+
+<!-- <h2>{{name}} {{name}} {{name}} {{name}} {{name}} {{name}}</h2>
+<br>
+<input type="text" name="" value="" ng-model="name"> -->
+
+<form ng-submit="searchNew(search)">
+  <div class="input">
+    <input type="text" ng-model="search" placeholder="search giphy"/>
+  </div>
+</form>
+<div class="container">
+  <div class="images">
+    <img  ng-repeat="gif in gifs" src="{{gif.images.original.url}}" alt=""/>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.js"></script>
+<script src="app.js" charset="utf-8"></script>
+<script src="mainCtrl.js" charset="utf-8"></script>
+<script src="mainServ.js" charset="utf-8"></script>
+</body>
+</html>
